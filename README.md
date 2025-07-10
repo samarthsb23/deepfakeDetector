@@ -10,32 +10,33 @@ Created as a part of the 'Audio Classification and Signal Processing using Deep 
 ### Description of Dataset- ASVspoof 2021
 
 ## Model Description:
-CNN Model Architecture
- Feature Extraction:
-Conv2D (32, 3×3, ReLU): Detects patterns in the Mel spectrogram.
-MaxPooling (2×2): Reduces spatial dimensions.
-Conv2D (64, 3×3, ReLU) + MaxPooling: Extracts deeper features.
-Flattening & Fully Connected Layers:
-Flatten(): Converts 2D features to 1D.
-Dense (128, ReLU) + Dropout (50%): Prevents
-overfitting and learns high-level features.
-Output Layer:
-Dense(NUM_CLASSES, Softmax): Classifies audio as real or deepfake
+CNN Model Architecture    
+### Feature Extraction:    
+Conv2D (32, 3×3, ReLU): Detects patterns in the Mel spectrogram.   
+MaxPooling (2×2): Reduces spatial dimensions.   
+Conv2D (64, 3×3, ReLU) + MaxPooling: Extracts deeper features.   
+Flattening & Fully Connected Layers:   
+Flatten(): Converts 2D features to 1D.   
+Dense (128, ReLU) + Dropout (50%): Prevents   
+overfitting and learns high-level features.   
+Output Layer:   
+Dense(NUM_CLASSES, Softmax): Classifies audio as real or deepfake   
 
 ## Results:
-Confusion Matrix- 
-TP = 6947
-FN = 1982
-FP = 11
-IN = 1060
+### Confusion Matrix-    
+TP = 6947   
+FN = 1982   
+FP = 11  
+TN = 1060   
 
-Accuracy = 80.07%
-Precision = 0.9984
-Recall = 0.778
-F1-score = 0.88
-Specificity = 0.99
-Type-1 errors = 0.011
-Type-2 errors = 0.22
+### Metrics-
+Accuracy = 80.07%   
+Precision = 0.9984    
+Recall = 0.778    
+F1-score = 0.88    
+Specificity = 0.99  
+Type-1 errors = 0.011   
+Type-2 errors = 0.22   
 
 _______________________________________________________
 
